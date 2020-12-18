@@ -16,7 +16,7 @@ const About = () => {
                     </h2>
                 </Col>
                 <Col lg={8} className="no-padding">
-                    <h3 className="text-center px-4 py-5 about-text">Autem quod ne Phasellus rutrum diam molestie nisi aliquet ac in neque.Eos quis porro in non nemo ex. Phasellus rutrum diam molestie nisi aliquet ac in neque.Autem quod ne Phasellus rutrum diam molestie nisi aliquet ac in neque.Eos quis porro in non nemo ex. Phasellus rutrum diam molestie nisi aliquet ac in neque.Phasellus rutrum diam molestie nisi aliquet ac in neque.</h3>
+                    <h3 className="text-center px-3 py-3 about-text">Autem quod ne Phasellus rutrum diam molestie nisi aliquet ac in neque.Eos quis porro in non nemo ex. Phasellus rutrum diam molestie nisi aliquet ac in neque.Autem quod ne Phasellus rutrum diam molestie nisi aliquet ac in neque.Eos quis porro in non nemo ex. Phasellus rutrum diam molestie nisi aliquet ac in neque.Phasellus rutrum diam molestie nisi aliquet ac in neque.</h3>
                 </Col>
             </Row>
         </Container>

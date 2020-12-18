@@ -11,36 +11,36 @@ const Slider = () => {
         {
             img: Slider1,
             name: 'Rodolfo',
-            bio: 'Etiam vulputate odio sed porta vehicula. Etiam interdum fringilla ex, sed lobortis tellus volutpat nec. Praesent sapien erat, sagittis sit amet diam at, viverra sagittis diam. Nulla eu mauris eget diam condimentum faucibus. Suspendisse est lectus, fermentum quis fermentum pulvinar, venenatis a diam.'
+            bio: 'Etiam interdum fringilla ex, sed. Praesent sapien erat, sagittis sit amet diam at, viverra sagittis diam. Nulla eu mauris eget diam condimentum faucibus. Suspendisse est lectus, fermentum quis fermentum pulvinar, venenatis a diam.'
         },
         {
             img: Slider4,
             name: 'Maria',
-            bio: 'Etiam vulputate odio sed porta vehicula. Etiam interdum fringilla ex, sed lobortis tellus volutpat nec. Praesent sapien erat, sagittis sit amet diam at, viverra sagittis diam. Nulla eu mauris eget diam condimentum faucibus. Suspendisse est lectus, fermentum quis fermentum pulvinar, venenatis a diam.'
+            bio: ' Etiam interdum fringilla ex, sed. Praesent sapien erat, sagittis sit amet diam at, viverra sagittis diam. Nulla eu mauris eget diam condimentum faucibus. Suspendisse est lectus, fermentum quis fermentum pulvinar, venenatis a diam.'
         },
         {
             img: Slider3,
             name: 'Francisco',
-            bio: 'Etiam vulputate odio sed porta vehicula. Etiam interdum fringilla ex, sed lobortis tellus volutpat nec. Praesent sapien erat, sagittis sit amet diam at, viverra sagittis diam. Nulla eu mauris eget diam condimentum faucibus. Suspendisse est lectus, fermentum quis fermentum pulvinar, venenatis a diam.'
+            bio: 'Etiam interdum fringilla ex, sed. Praesent sapien erat, sagittis sit amet diam at, viverra sagittis diam. Nulla eu mauris eget diam condimentum faucibus. Suspendisse est lectus, fermentum quis fermentum pulvinar, venenatis a diam.'
         },
         {
             img: Slider2,
             name: 'Otro',
-            bio: 'Etiam vulputate odio sed porta vehicula. Etiam interdum fringilla ex, sed lobortis tellus volutpat nec. Praesent sapien erat, sagittis sit amet diam at, viverra sagittis diam. Nulla eu mauris eget diam condimentum faucibus. Suspendisse est lectus, fermentum quis fermentum pulvinar, venenatis a diam.'
+            bio: 'Etiam interdum fringilla ex, sed. Praesent sapien erat, sagittis sit amet diam at, viverra sagittis diam. Nulla eu mauris eget diam condimentum faucibus. Suspendisse est lectus, fermentum quis fermentum pulvinar, venenatis a diam.'
         },
     ];
 
     return (
         <Carousel className="mt-5">
             {items.map(item => (
-                <Carousel.Item>
+                <Carousel.Item className="text-center">
                     <img
-                        className="carousel-img w-100"
+                        className="carousel-img mt-5"
                         src={item.img}
                         alt={`foto de ${item.name}`}
                     />
-                    <h3>{item.name}</h3>
-                    <p>{item.bio}</p>
+                    <h3 className="carousel-name mt-3">{item.name}</h3>
+                    <p className="carousel-bio">{item.bio}</p>
                 </Carousel.Item>
             ))}
         </Carousel>
