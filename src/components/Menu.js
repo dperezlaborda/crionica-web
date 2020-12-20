@@ -20,24 +20,26 @@ const Menu = () => {
     window.addEventListener('scroll', changeBackground);
 
     return (
-        <Container fluid className="p-0">
-            <Navbar expand="lg" fixed="top" className={navbar ? 'navbar active' : 'navbar'}>
-                <Navbar.Brand href="#home">logo</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                        <NavDropdown title="¿Qué es la criónica?" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Preguntas Frecuentes</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.1">Objetivos</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.1">Logros</NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link href="#us">Quienes Somos</Nav.Link>
-                        <Nav.Link href="#news">Noticias</Nav.Link>
-                        <Nav.Link href="#contact">Contacto</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
-        </Container>
+        <header >
+            <Container fluid className="p-0">
+                <Navbar expand="lg" fixed="top" className={navbar ? 'navbar active' : 'navbar'}>
+                    <Navbar.Brand href="#home">logo</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="ml-auto">
+                            <Nav.Link href="#us">Quienes Somos</Nav.Link>
+                            <NavDropdown title="¿Qué es la criónica?" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="#action/3.1">Preguntas Frecuentes</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.1">Objetivos</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.1">Logros</NavDropdown.Item>
+                            </NavDropdown>
+                            <Nav.Link href="#news">Noticias</Nav.Link>
+                            <Nav.Link href="#contact">Contacto</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+            </Container>
+        </header>
     );
 }
 

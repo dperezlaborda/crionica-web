@@ -22,16 +22,22 @@
 }
 
 .carousel-name{
-    font-size:25px;
+    font-size:20px;
     font-weight:bold;
+}
+
+.carousel-info{
+    color:#4C6873;
+    font-size:15px;
 }
 
 .carousel-bio{
     color:#212529;
     line-height:23px;
     margin:15px 42px 20px;
-    font-size:15px;
+    font-size:13px;
 }
+
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {

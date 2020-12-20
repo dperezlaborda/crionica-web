@@ -40,7 +40,7 @@
 }
 
 .navbar-collapse{
-    font-size:15px; 
+    font-size:15px;
 }
 
 .navbar-light .navbar-nav .show>.nav-link {
@@ -49,7 +49,7 @@
 
 .dropdown-menu{
     font-size:15px;
-    background:linear-gradient(90deg, #597A87 0%, #384C54 100%);
+    background:#597A87;
     border: none;
 }
 

@@ -4,6 +4,7 @@ h1, h2, p{
 
 #hero{
     box-sizing: border-box;
+    min-height: 400px;
     padding-right: 0;
     padding-left: 0;
     width:100%;
@@ -16,7 +17,7 @@ h1, h2, p{
     margin-left: 0;
     margin-right: 0;
     position: relative;
-    height:320px;
+    height:400px;
     width:100%;
 }
 
@@ -33,6 +34,7 @@ h1, h2, p{
 .main-title{
     font-size: 35px;
     letter-spacing: 2px;
+    margin: 65px 0;
 }
 
 .title{

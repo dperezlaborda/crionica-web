@@ -4,6 +4,7 @@ import Menu from './components/Menu.js';
 import Hero from './sections/Hero.js';
 import About from './sections/About.js';
 import Us from './sections/Us.js';
+import Footer from './components/Footer.js';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,8 +13,9 @@ function App() {
         <div className="App">
             <Menu />
             <Hero />
-            <About />
             <Us />
+            <About />
+            <Footer />
         </div>
     );
 }

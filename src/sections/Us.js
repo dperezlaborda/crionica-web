@@ -6,7 +6,7 @@ import '../style/us.css'
 
 const Us = () => {
     return (
-        <Container id="us" className="my-4">
+        <Container id="us" className="my-5">
             <h2 className="text-center us-title"><em>Quiénes somos</em></h2>
             <Slider />
         </Container>
