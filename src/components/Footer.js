@@ -12,14 +12,14 @@ const Footer = () => {
             <Container>
                 <div className="footer-top footer-padding">
                     <Row className="justify-content-between">
-                        <Col sm={6} md={4} lg={4} xl={4}>
+                        <Col sm={3} md={4} lg={4} xl={4}>
                             <div className="footer-caption">
                                 <div className="mb-5">
                                     <div className="footer-logo">Logo</div>
                                 </div>
                             </div>
                         </Col>
-                        <Col sm={6} md={4} lg={2} xl={2}>
+                        <Col sm={6} md={4} lg={4} xl={4}>
                             <div className="footer-caption">
                                 <div className="footer-title">
                                     <h4>Accesos Rapidos</h4>
