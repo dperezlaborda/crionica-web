@@ -46,19 +46,19 @@ const Footer = () => {
                                     <h4>+564 7885 3222</h4>
                                     <ul>
                                         <li>
-                                            <a className="footer-mail" href="#">youremail@gmail.com</a>
+                                            <p className="footer-mail">youremail@gmail.com</p>
                                         </li>
                                     </ul>
                                     <p className="footer-adress">123 East 26th Street, Fifth Floor, New York, NY 10011</p>
                                 </div>
                                 <div className="footer-social">
-                                    <a href="#" className="mr-2">
+                                    <a href="https://www.facebook.com/" className="mr-2">
                                         <FontAwesomeIcon icon={faFacebookF} />
                                     </a>
-                                    <a href="#" className="mr-2">
+                                    <a href="https://twitter.com/?lang=es" className="mr-2">
                                         <FontAwesomeIcon icon={faTwitter} />
                                     </a>
-                                    <a href="#" className="mr-2">
+                                    <a href="https://www.instagram.com/" className="mr-2">
                                         <FontAwesomeIcon icon={faInstagram} />
                                     </a>
                                 </div>

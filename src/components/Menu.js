@@ -29,9 +29,9 @@ const Menu = () => {
                         <Nav className="ml-auto">
                             <Nav.Link href="#us">Quienes Somos</Nav.Link>
                             <NavDropdown title="¿Qué es la criónica?" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Preguntas Frecuentes</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.1">Objetivos</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.1">Logros</NavDropdown.Item>
+                                <NavDropdown.Item href="#faq">Preguntas Frecuentes</NavDropdown.Item>
+                                <NavDropdown.Item href="#objetivos">Objetivos</NavDropdown.Item>
+                                <NavDropdown.Item href="#logros">Logros</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link href="#news">Noticias</Nav.Link>
                             <Nav.Link href="#contact">Contacto</Nav.Link>
