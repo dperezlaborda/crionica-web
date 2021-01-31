@@ -1,10 +1,11 @@
 import React from 'react'
+import IntroSections from '../components/IntroSections'
 
 const AchievContainer = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <IntroSections sectionTitle="Nuestros Logros"/>
+        </>
     )
 }
 

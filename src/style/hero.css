@@ -14,9 +14,14 @@ h1, h2, p{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display:flex;
+    justify-content:center;
+    align-items: center;
     margin-left: 0;
     margin-right: 0;
     position: relative;
+    min-width: 130px;
+    min-height: 400px;
     height:400px;
     width:100%;
 }

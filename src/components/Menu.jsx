@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { NavLink } from 'react-router-dom';
 import '../style/menu.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -23,18 +24,20 @@ const Menu = () => {
         <header >
             <Container fluid className="p-0">
                 <Navbar expand="lg" fixed="top" className={navbar ? 'navbar active' : 'navbar'}>
-                    <Navbar.Brand href="#home">logo</Navbar.Brand>
+                    <NavLink to="/">
+                        <Navbar.Brand>logo</Navbar.Brand>
+                    </NavLink>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto">
-                            <Nav.Link href="#us">Quienes Somos</Nav.Link>
+                            <NavLink to="/quienes_somos" className="nav-link">Quienes Somos</NavLink>
                             <NavDropdown title="¿Qué es la criónica?" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#faq">Preguntas Frecuentes</NavDropdown.Item>
-                                <NavDropdown.Item href="#objetivos">Objetivos</NavDropdown.Item>
-                                <NavDropdown.Item href="#logros">Logros</NavDropdown.Item>
+                                <NavLink to="/preguntas_frecuentes" className="dropdown-item">Preguntas Frecuentes</NavLink>
+                                <NavLink to="/objetivos" className="dropdown-item">Objetivos</NavLink>
+                                <NavLink to="/logros" className="dropdown-item">Logros</NavLink>
                             </NavDropdown>
-                            <Nav.Link href="#news">Noticias</Nav.Link>
-                            <Nav.Link href="#contact">Contacto</Nav.Link>
+                            <NavLink to="/noticias" className="nav-link">Noticias</NavLink>
+                            <NavLink to="/contacto" className="nav-link">Contacto</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

@@ -10,7 +10,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faMobileAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import '../style/contact.css';
 
-
 const Contact = () => {
 
 

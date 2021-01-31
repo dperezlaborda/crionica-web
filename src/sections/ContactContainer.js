@@ -4,6 +4,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import bg from '../img/bg-contact.jpg';
+import { Link } from 'react-router-dom';
+
 import '../style/contactContainer.css';
 
 const ContactContainer = () => {
@@ -19,9 +21,11 @@ const ContactContainer = () => {
                         </div>
                     </Col>
                     <Col md={4} lg={4} xl={4}>
-                        <Button className="contact-btn">
-                            Contactanos
+                        <Link to='/contacto'>
+                            <Button className="contact-btn">
+                                Contactanos
                         </Button>
+                        </Link>
                     </Col>
                 </Row>
             </Container>

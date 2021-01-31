@@ -1,0 +1,12 @@
+.intro-title-all{
+    font-size:24px;
+    padding-bottom: 25px;
+    color: #4C6873;
+    border-bottom: 1px solid  #4C6873;
+}
+
+.intro-text-all{
+    font-size:18px;
+    line-height:35px;
+    color:#6c757d;
+}

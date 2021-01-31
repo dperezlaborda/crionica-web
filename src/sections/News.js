@@ -1,8 +1,11 @@
 import React from 'react';
+import IntroSections from '../components/IntroSections';
 
 const News = () => {
     return (
-        <div></div>
+        <>
+            <IntroSections sectionTitle="Noticias"/>
+        </>
     )
 }
 
