@@ -1,8 +1,16 @@
 .intro-title-all{
-    font-size:24px;
+    font-size:27px;
     padding-bottom: 25px;
     color: #4C6873;
-    border-bottom: 1px solid  #4C6873;
+}
+
+.bottom-line{
+    display: block;
+    width:60px;
+    height:2px;
+    background-color:#A5CAD9;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .intro-text-all{
