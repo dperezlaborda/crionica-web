@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Slider from '../components/Slider.js';
+import Slider from '../components/Slider';
 import '../style/us.css'
 
 

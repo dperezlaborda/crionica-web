@@ -1,11 +1,12 @@
 import './App.css';
 import React from 'react';
-import Menu from './components/Menu.js';
-import Hero from './sections/Hero.js';
-import About from './sections/About.js';
-import Us from './sections/Us.js';
-import Contact from './sections/Contact.js';
-import Footer from './components/Footer.js';
+import Menu from './components/Menu';
+import Hero from './sections/Hero';
+import About from './sections/About';
+import Us from './sections/Us';
+import ContactContainer from './sections/ContactContainer';
+import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,8 +17,9 @@ function App() {
             <Hero />
             <Us />
             <About />
-            <Contact />
+            <ContactContainer />
             <Footer />
+            <Contact />
         </div>
     );
 }

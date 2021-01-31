@@ -4,9 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import bg from '../img/bg-contact.jpg';
-import '../style/contact.css';
+import '../style/contactContainer.css';
 
-const Contact = () => {
+const ContactContainer = () => {
     return (
         <section id="contact" className="bg-contact" style={{
             backgroundImage: `url(${bg})`
@@ -29,4 +29,4 @@ const Contact = () => {
     )
 }
 
-export default Contact;
+export default ContactContainer;
