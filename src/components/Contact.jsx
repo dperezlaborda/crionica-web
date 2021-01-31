@@ -29,13 +29,13 @@ const Contact = () => {
     return (
         <section id="contact-site">
             <Container>
-                <Airform email="dperezlaborda@gmail.com">
-                    <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                        <Row>
-                            <Col lg={12}>
-                                <h2 className="contact-site-title">Get in Touch</h2>
-                            </Col>
-                            <Col lg={8}>
+                <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                    <Row>
+                        <Col lg={12}>
+                            <h2 className="contact-site-title">Get in Touch</h2>
+                        </Col>
+                        <Col lg={8}>
+                            <Airform email="dperezlaborda@gmail.com" method="post">
                                 <Row>
                                     <Col lg={12}>
                                         <FormGroup>
@@ -46,56 +46,56 @@ const Contact = () => {
                                     </Col>
                                     <Col sm={6}>
                                         <FormGroup>
-                                            <FormControl className="form-style height" required type="text" placeholder="Tu nombre"></FormControl>
+                                            <FormControl className="form-style height" required type="text" placeholder="Tu nombre" name="name"></FormControl>
                                             <FormControl.Feedback type="invalid">Falta tu nombre!</FormControl.Feedback>
                                         </FormGroup>
                                     </Col>
                                     <Col sm={6}>
                                         <FormGroup>
-                                            <FormControl className="form-style height" required type="email" placeholder="Ingresa tu email"></FormControl>
+                                            <FormControl className="form-style height" required type="email" placeholder="Ingresa tu email" name="email"></FormControl>
                                             <FormControl.Feedback type="invalid">Falta tu email!</FormControl.Feedback>
                                         </FormGroup>
                                     </Col>
                                     <Col>
                                         <FormGroup>
-                                            <FormControl className="form-style height" type="text" placeholder="Asunto"></FormControl>
+                                            <FormControl className="form-style height" type="text" placeholder="Asunto" name="subject"></FormControl>
                                         </FormGroup>
                                     </Col>
                                 </Row>
                                 <Button className="contact-btn mb-5" type="submit">Enviar</Button>
-                            </Col>
-                            <Col className="col-lg-3 offset-lg-1">
-                                <div className="media contact-info">
-                                    <span className="contact-info-icon">
-                                        <FontAwesomeIcon className="contact-icon" icon={faMapMarkerAlt} />
-                                    </span>
-                                    <div className="media-body ml-2">
-                                        <h3 className="contact-info-text">Buttonwood, California.</h3>
-                                        <p>Rosemead, CA 91770</p>
-                                    </div>
+                            </Airform>
+                        </Col>
+                        <Col className="col-lg-3 offset-lg-1">
+                            <div className="media contact-info">
+                                <span className="contact-info-icon">
+                                    <FontAwesomeIcon className="contact-icon" icon={faMapMarkerAlt} />
+                                </span>
+                                <div className="media-body ml-2">
+                                    <h3 className="contact-info-text">Buttonwood, California.</h3>
+                                    <p>Rosemead, CA 91770</p>
                                 </div>
-                                <div className="media contact-info">
-                                    <span className="contact-info-icon">
-                                        <FontAwesomeIcon className="contact-icon" icon={faMobileAlt} />
-                                    </span>
-                                    <div className="media-body ml-2">
-                                        <h3 className="contact-info-text">11 5656 17044</h3>
-                                        <p>Lun a Vier 9 a 18hs</p>
-                                    </div>
+                            </div>
+                            <div className="media contact-info">
+                                <span className="contact-info-icon">
+                                    <FontAwesomeIcon className="contact-icon" icon={faMobileAlt} />
+                                </span>
+                                <div className="media-body ml-2">
+                                    <h3 className="contact-info-text">11 5656 17044</h3>
+                                    <p>Lun a Vier 9 a 18hs</p>
                                 </div>
-                                <div className="media contact-info">
-                                    <span className="contact-info-icon">
-                                        <FontAwesomeIcon className="contact-icon" icon={faEnvelope} />
-                                    </span>
-                                    <div className="media-body">
-                                        <h3 className="contact-info-text">blabla@gmail.com</h3>
-                                        <p>Envianos tu consulta !</p>
-                                    </div>
+                            </div>
+                            <div className="media contact-info">
+                                <span className="contact-info-icon">
+                                    <FontAwesomeIcon className="contact-icon" icon={faEnvelope} />
+                                </span>
+                                <div className="media-body">
+                                    <h3 className="contact-info-text">blabla@gmail.com</h3>
+                                    <p>Envianos tu consulta !</p>
                                 </div>
-                            </Col>
-                        </Row>
-                    </Form>
-                </Airform>
+                            </div>
+                        </Col>
+                    </Row>
+                </Form>
             </Container>
         </section>
     )
