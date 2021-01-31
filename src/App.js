@@ -7,6 +7,7 @@ import Us from './sections/Us';
 import ContactContainer from './sections/ContactContainer';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import ObjectivesContainer from './sections/ObjectivesContainer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -20,6 +21,7 @@ function App() {
             <ContactContainer />
             <Footer />
             <Contact />
+            <ObjectivesContainer />
         </div>
     );
 }

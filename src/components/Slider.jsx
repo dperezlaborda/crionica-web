@@ -9,28 +9,24 @@ import '../style/slider.css';
 const Slider = () => {
     const items = [
         {
-            id: 1,
             img: Slider1,
             name: 'Rodolfo',
             info: 'sagittis sit',
             bio: 'Etiam interdum fringilla ex, sed. Praesent sapien erat, sagittis sit amet diam at, viverra sagittis diam. Nulla eu mauris eget diam condimentum faucibus. Suspendisse est lectus, fermentum quis fermentum pulvinar, venenatis a diam.'
         },
         {
-            id: 2,
             img: Slider4,
             name: 'Maria',
             info: 'sagittis sit',
             bio: ' Etiam interdum fringilla ex, sed. Praesent sapien erat, sagittis sit amet diam at, viverra sagittis diam. Nulla eu mauris eget diam condimentum faucibus. Suspendisse est lectus, fermentum quis fermentum pulvinar, venenatis a diam.'
         },
         {
-            id: 3,
             img: Slider3,
             name: 'Francisco',
             info: 'sagittis sit',
             bio: 'Etiam interdum fringilla ex, sed. Praesent sapien erat, sagittis sit amet diam at, viverra sagittis diam. Nulla eu mauris eget diam condimentum faucibus. Suspendisse est lectus, fermentum quis fermentum pulvinar, venenatis a diam.'
         },
         {
-            id: 4,
             img: Slider2,
             name: 'Otro',
             info: 'sagittis sit',
