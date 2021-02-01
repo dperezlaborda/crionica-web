@@ -44,7 +44,7 @@ const Slider = () => {
                         alt={`foto de ${item.name}`}
                     />
                     <h3 className="carousel-name mt-3">{item.name}</h3>
-                    <h4 className="carousel-info" >{item.info}</h4>
+                    <h4 className="carousel-info font-italic text-capitalize" >{item.info}</h4>
                     <p className="carousel-bio">{item.bio}</p>
                 </Carousel.Item>
             ))}
