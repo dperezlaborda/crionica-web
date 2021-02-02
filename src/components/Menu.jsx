@@ -21,9 +21,9 @@ const Menu = () => {
     window.addEventListener('scroll', changeBackground);
 
     return (
-        <header >
+        <header>
             <Container fluid className="p-0">
-                <Navbar expand="lg" fixed="top" className={navbar ? 'navbar active' : 'navbar'}>
+                <Navbar expand="lg" fixed="top" className={navbar ? 'navbar active' : 'navbar'} >
                     <NavLink to="/">
                         <Navbar.Brand>logo</Navbar.Brand>
                     </NavLink>
@@ -36,7 +36,7 @@ const Menu = () => {
                                 <NavLink to="/objetivos" className="dropdown-item">Objetivos</NavLink>
                                 <NavLink to="/logros" className="dropdown-item">Logros</NavLink>
                             </NavDropdown>
-                            <NavLink to="/noticias" className="nav-link">Noticias</NavLink>
+                            <NavLink to="/noticias" className="nav-link" >Noticias</NavLink>
                             <NavLink to="/contacto" className="nav-link">Contacto</NavLink>
                         </Nav>
                     </Navbar.Collapse>

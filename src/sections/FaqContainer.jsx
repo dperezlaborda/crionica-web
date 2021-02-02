@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Hero from '../components/Hero';
 import IntroSections from '../components/IntroSections';
 import Faq from '../components/Faq';
@@ -40,11 +40,13 @@ const FaqContainer = () => {
                 <Container>
                     <IntroSections sectionTitle="Preguntas más frecuentes" />
                     <Row>
-                        {answers.map((ans, a) =>{
-                            return(
-                                <Faq key={a} question={ans.question} answer={ans.answer}/>
-                            )
-                        })}
+                        <Col>
+                            {answers.map((ans, a) =>{
+                                return(
+                                    <Faq key={a} question={ans.question} answer={ans.answer}/>
+                                )
+                            })}
+                        </Col>
                     </Row>
                 </Container>
             </section>
