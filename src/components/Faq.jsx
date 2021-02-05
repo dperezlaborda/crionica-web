@@ -16,7 +16,7 @@ const Faq = (props) => {
 
     return (
         <div id="container-faq">
-            <h3 className="ques-title">{props.question}
+            <h3 className="ques-title d-flex justify-content-between">{props.question}
                 <Button onClick={openAnswer} className="icon">
                     {open ?
                         <FontAwesomeIcon icon={faChevronDown} />

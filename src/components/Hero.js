@@ -1,10 +1,11 @@
 import React from 'react';
-import img from '../img/background.jpg';
+import img from '../img/TanquesAzul_b.jpg';
+import heroTitle from '../img/crionica_titulo.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import '../style/hero.css';
 
-const Hero = ({heroTitle, heroSub, heroTxt}) => {
+const Hero = ({ heroSub, heroTxt}) => {
     return (
         <Container fluid id="hero">
             <Row className="image-container" style={{
@@ -12,7 +13,9 @@ const Hero = ({heroTitle, heroSub, heroTxt}) => {
             }}>
                 <div className="black-gradient"></div>
                 <Container className="text-container text-center my-4">
-                    <h1 className="main-title text-uppercase">{heroTitle}</h1>
+                    <div className="main-title">
+                        <img src={heroTitle} alt="crionica main title" className="image-title"/>
+                    </div>
                     <h2 className="title mb-3">{heroSub}</h2>
                     <small className="text text-muted">{heroTxt}</small>
                 </Container>

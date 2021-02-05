@@ -7,7 +7,7 @@
     padding-bottom: 50px;
 }
 
-@media (max-width: 575px){
+@media (max-width: 750px){
     .footer-padding{
         padding-top:80px;
         padding-bottom:0;

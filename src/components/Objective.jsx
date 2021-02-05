@@ -6,7 +6,7 @@ const Objective = (props) => {
     return (
         <>
             <Col lg={4} md={6} sm={6}>
-                <div className="single-obj text-center mb-4">
+                <div className="single-obj text-center mb-4 front">
                     <div className="obj-icon-container">
                         <span className="obj-icon">{props.iconObj}</span>
                     </div>

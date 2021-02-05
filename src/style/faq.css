@@ -1,6 +1,18 @@
 #container-faq button{
     background: none;
     color:#597A87;
-    border:1px solid #597A87;
+    border:none;
     padding:8px;
+}
+
+.ques-title{
+    font-size:20px;
+    color:#597A87;
+    border-bottom:1px solid #A5CAD9;
+    letter-spacing: 1px;
+}
+
+.ans-text{
+    font-size:18px;
+    color:#6c757d;
 }

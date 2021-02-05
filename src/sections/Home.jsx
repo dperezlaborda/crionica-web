@@ -8,7 +8,7 @@ const Home = () => {
 
     return (
         <>
-            <Hero heroTitle="crionica argentina" heroSub="Ullamco laboris nisi ut aliquip ex ea commodo consequat." heroTxt="Somos un grupo de crionicistas en Argentina..."/>
+            <Hero heroSub="Ullamco laboris nisi ut aliquip ex ea commodo consequat." heroTxt="Somos un grupo de crionicistas en Argentina..."/>
             <About />
             <UsContainer/>
             <ContactContainer />
