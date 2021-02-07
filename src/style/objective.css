@@ -1,7 +1,7 @@
 
 .single-obj{
     border: 1px solid #e5e6e9;
-    padding: 47px 19px;
+    padding: 52px 19px;
     transition: all .4s ease-out 0s;
 }
 
@@ -33,4 +33,10 @@
     font-size: 16px;
     margin-bottom: 15px;
     line-height:30px;
+}
+
+@media (min-width: 992px){
+    .single-obj{
+        min-height: 400px;
+    }
 }

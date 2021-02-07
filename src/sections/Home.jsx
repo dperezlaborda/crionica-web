@@ -8,9 +8,9 @@ const Home = () => {
 
     return (
         <>
-            <Hero heroSub="Ullamco laboris nisi ut aliquip ex ea commodo consequat." heroTxt="Somos un grupo de crionicistas en Argentina..."/>
+            <Hero heroTitle="CRIONICA ARGENTINA" heroSub="Ullamco laboris nisi ut aliquip ex ea commodo consequat." heroTxt="Somos un grupo de crionicistas en Argentina..." />
             <About />
-            <UsContainer/>
+            <UsContainer />
             <ContactContainer />
         </>
     )

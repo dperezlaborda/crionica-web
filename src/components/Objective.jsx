@@ -5,8 +5,8 @@ import '../style/objective.css';
 const Objective = (props) => {
     return (
         <>
-            <Col lg={4} md={6} sm={6}>
-                <div className="single-obj text-center mb-4 front">
+            <Col lg={6} md={8}>
+                <div className="single-obj text-center mb-4">
                     <div className="obj-icon-container">
                         <span className="obj-icon">{props.iconObj}</span>
                     </div>

@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../style/introSections.css';
 
-const IntroSections = ({ sectionTitle }) => {
+const IntroSections = ({ sectionTitle, sectionSubTitle }) => {
     return (
         <Row className="intro">
             <Col lg={12} className="text-center">
@@ -11,7 +11,7 @@ const IntroSections = ({ sectionTitle }) => {
                 <span className="bottom-line"></span>
             </Col>
             <Col className="text-center">
-                <p className="intro-text-all mb-5 font-italic">Excepteur ex aliqua voluptate. Nisi nisi nisi aliqua eiusmod dolor dolor proident deserunt occaecat elit Lorem reprehenderit. Id culpa veniam ex aliqua magna elit pariatur do nulla. Excepteur enim magna veniam labore veniam sint.</p>
+                <p className="intro-text-all mb-5 font-italic">{sectionSubTitle}</p>
             </Col>
         </Row>
     )

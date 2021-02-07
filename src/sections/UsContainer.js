@@ -5,7 +5,7 @@ import Slider from '../components/Slider';
 
 const UsContainer = () => {
     return (
-        <Container id="us" className="my-5 pt-5">
+        <Container id="us" className="py-5">
             <IntroSections sectionTitle="Quienes Somos"/>
             <Slider />
         </Container>

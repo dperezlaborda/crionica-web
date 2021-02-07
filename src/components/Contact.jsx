@@ -28,7 +28,7 @@ const Contact = () => {
 
     return (
         <>
-            <Hero heroTitle="contacto"/>
+            <Hero heroTitle="CONTACTO" />
             <section id="contact-site">
                 <Container>
                     <Row>

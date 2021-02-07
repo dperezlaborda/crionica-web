@@ -3,10 +3,11 @@ import  Container  from 'react-bootstrap/Container';
 import Hero from '../components/Hero';
 import IntroSections from '../components/IntroSections';
 
+
 const News = () => {
     return (
         <>
-            <Hero heroTitle="noticias" />
+            <Hero heroTitle="NOTICIAS" />
             <section>
                 <Container>
                     <IntroSections sectionTitle="Las últimas noticias" />

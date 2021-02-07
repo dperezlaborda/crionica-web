@@ -10,6 +10,7 @@ import { faArchive, faBook } from '@fortawesome/free-solid-svg-icons';
 import Achiev from '../components/Achiev';
 import ReverseAch from '../components/ReverseAch';
 
+
 const AchievContainer = () => {
 
     const ach = {
@@ -28,7 +29,7 @@ const AchievContainer = () => {
 
     return (
         <>
-            <Hero heroTitle="logros" />
+            <Hero heroTitle="LOGROS"/>
             <section id="achievContainer" className="py-5">
                 <Container>
                     <IntroSections sectionTitle="Nuestros Logros" />

@@ -37,38 +37,12 @@ h1, h2, p{
 }
 
 .main-title{
+    color:#A5CAD9;
     margin-bottom:30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size:40px;
 }
-
-/* media para titulo de Crionica */
-
-@media (max-width: 499px) {
-    .image-title{
-        
-        width: 200px;
-    }
-}
-
-@media (min-width: 500px) and (max-width: 700px) {
-    .image-title{
-        
-        width: 80%;
-    }
-}
-
-@media (min-width: 701px) and (max-width: 991px){
-    .image-title{
-        width: 70%;
-    }
-}
-
-@media (min-width: 992px) {
-    .image-title{
-        width: 50%;
-    }
-}
-
-
 
 .title{
     font-size:15px;
