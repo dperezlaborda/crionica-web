@@ -36,6 +36,7 @@ const Menu = () => {
                                 <NavLink to="/objetivos" className="dropdown-item">Objetivos</NavLink>
                                 <NavLink to="/logros" className="dropdown-item">Logros</NavLink>
                             </NavDropdown>
+                            <NavLink to="/crionica_en_el_mundo" className="nav-link" >Criónica en el mundo</NavLink>
                             <NavLink to="/noticias" className="nav-link" >Noticias</NavLink>
                             <NavLink to="/contacto" className="nav-link">Contacto</NavLink>
                         </Nav>

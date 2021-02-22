@@ -39,11 +39,14 @@
     cursor:pointer;
 }
 
-#footer-area .footer-title li:hover{
+#footer-area .footer-title .nav-link-footer:hover{
     transform: translateX(6px);
+    color:#A5CAD9;
+    text-decoration: none;
 }
 
 a{
+    text-decoration:none;
     outline: none;
     color:#F4EDF1;
     transition: all .3s ease-out 0s;

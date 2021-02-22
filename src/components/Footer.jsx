@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import '../style/footer.css'
@@ -25,16 +26,16 @@ const Footer = () => {
                                     <h4>Accesos Rapidos</h4>
                                     <ul>
                                         <li>
-                                            Preguntas Frecuentes
+                                            <NavLink to="/preguntas_frecuentes" className="nav-link-footer">Preguntas Frecuentes</NavLink>
                                         </li>
                                         <li>
-                                            Objetivos
+                                            <NavLink to="/objetivos" className="nav-link-footer">Objetivos</NavLink>
                                         </li>
                                         <li>
-                                            Logros
+                                            <NavLink to="/logros" className="nav-link-footer">Logros</NavLink>
                                         </li>
                                         <li>
-                                            Noticias
+                                            <NavLink to="/noticias" className="nav-link-footer">Noticias</NavLink>
                                         </li>
                                     </ul>
                                 </div>
