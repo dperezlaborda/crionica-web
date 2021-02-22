@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import IntroSections from '../components/IntroSections';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Nav from 'react-bootstrap/Nav';
-import NavItem from 'react-bootstrap/NavItem';
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tab';
 
 const InTheWorld = () => {
 
-    const handleSelect = (event) => {
-        const selected = event.currentTarget;
+    const [showImages, setShowImages] = useState('link-0');
 
+    const handleSelect = (e) => {
+        setShowImages(e);
     }
 
     return (
@@ -19,17 +20,20 @@ const InTheWorld = () => {
                 <IntroSections sectionTitle="Crionica en el mundo" sectionSubTitle="La criónica comenzó a implementarse en Estados Unidos hace más de 40 años, al principio con un número exiguo de seguidores, pero poco a poco ese número ha ido creciendo." />
                 <Row>
                     <Col>
-                        <Nav onSelect={(selectedKey) => alert(`select ${selectedKey}`)}>
-                            <NavItem>
-                                <Nav.Link eventKey="link-1">Arizona</Nav.Link>
-                            </NavItem>
-                            <NavItem>
-                                <Nav.Link eventKey="link-2">China</Nav.Link>
-                            </NavItem>
-                            <NavItem>
-                                <Nav.Link eventKey="link-3">Rusia</Nav.Link>
-                            </NavItem>
-                        </Nav>
+                        <Tabs activeKey={showImages} onSelect={handleSelect}>
+                            <Tab eventKey="link-0" title="En todo el mundo">
+                                <p>imagenes todo el mundo</p>
+                            </Tab>
+                            <Tab eventKey="link-1" title="Arizona">
+                                <p>imagenes de Arizona</p>
+                            </Tab>
+                            <Tab eventKey="link-2" title="China">
+                                <p>imagenes de China</p>
+                            </Tab>
+                            <Tab eventKey="link-3" title="Rusia">
+                                <p>imagenes de Rusia</p>
+                            </Tab>
+                        </Tabs>
                     </Col>
                 </Row>
             </Container>
