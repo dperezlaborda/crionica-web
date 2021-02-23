@@ -7,6 +7,11 @@ import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import '../style/inTheWorld.css';
 
+//images
+import arizona1 from '../img/Alcor1.jpg';
+import china1 from '../img/Criónica_en_China1.jpg';
+import rusia1 from '../img/KrioRus1.jpg';
+
 const InTheWorld = () => {
 
     const [showImages, setShowImages] = useState('link-0');
@@ -24,16 +29,40 @@ const InTheWorld = () => {
                         <div className="tab-menu">
                             <Tabs activeKey={showImages} onSelect={handleSelect} className="text-center d-flex justify-content-center">
                                 <Tab className="tab-link" eventKey="link-0" title="En el mundo">
-                                    <p>imagenes todo el mundo</p>
+                                    <Row>
+                                        <Col>
+                                            <div>
+                                                <img alt="crionica en el mundo" />
+                                            </div>
+                                        </Col>
+                                    </Row>
                                 </Tab>
                                 <Tab eventKey="link-1" title="Arizona">
-                                    <p>imagenes de Arizona</p>
+                                    <Row>
+                                        <Col>
+                                            <div>
+                                                <img alt="crionica en arizona" src={arizona1} />
+                                            </div>
+                                        </Col>
+                                    </Row>
                                 </Tab>
                                 <Tab eventKey="link-2" title="China">
-                                    <p>imagenes de China</p>
+                                    <Row>
+                                        <Col>
+                                            <div>
+                                                <img alt="crionica en china" src={china1} />
+                                            </div>
+                                        </Col>
+                                    </Row>
                                 </Tab>
                                 <Tab eventKey="link-3" title="Rusia">
-                                    <p>imagenes de Rusia</p>
+                                    <Row>
+                                        <Col>
+                                            <div>
+                                                <img alt="crionica rusia" src={rusia1} />
+                                            </div>
+                                        </Col>
+                                    </Row>
                                 </Tab>
                             </Tabs>
                         </div>
