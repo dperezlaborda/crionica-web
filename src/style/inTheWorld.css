@@ -1,0 +1,19 @@
+#inTheWorld  .nav-tabs .nav-link.active{
+    color: #6c757d;
+    border-bottom: 1px solid #A5CAD9;
+    font-weight: bold;
+}
+
+#inTheWorld .nav-tabs .nav-link{
+    border: none;
+    padding: 0 22px;
+    font-size: 13px;
+    line-height: 42px;
+    color:#6c757d;
+    transition: all .3s ease-out 0s;
+    text-transform: uppercase;
+}
+
+#inTheWorld .nav-tabs{
+    border-bottom: none;
+}

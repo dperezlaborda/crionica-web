@@ -6,7 +6,6 @@ import '../style/hero.css';
 
 const Hero = ({ heroTitle, heroSub, heroTxt}) => {
 
-
     return (
         <Container fluid id="hero">
             <Row className="image-container" style={{
