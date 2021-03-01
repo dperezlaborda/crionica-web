@@ -8,9 +8,13 @@ import Tab from 'react-bootstrap/Tab';
 import '../style/inTheWorld.css';
 
 //images
+import enElMundo from '../img/CriónicaFicción.jpg';
 import arizona1 from '../img/Alcor1.jpg';
+import arizona2 from '../img/Alcor2.jpg';
 import china1 from '../img/Criónica_en_China1.jpg';
+import china2 from '../img/Criónica_en_China2.jpg';
 import rusia1 from '../img/KrioRus1.jpg';
+import rusia2 from '../img/KrioRus2.jpg';
 
 const InTheWorld = () => {
 
@@ -20,6 +24,32 @@ const InTheWorld = () => {
         setShowImages(e);
     }
 
+    const imagesTabs = [
+        {
+            eventKey: "link-0",
+            title: "En el mundo",
+            image1: enElMundo
+        },
+        {
+            eventKey: "link-1",
+            title: "Arizona",
+            image1: arizona1,
+            image2: arizona2
+        },
+        {
+            eventKey: "link-2",
+            title: "China",
+            image1: china1,
+            image2: china2
+        },
+        {
+            eventKey: "link-3",
+            title: "Rusia",
+            image1: rusia1,
+            image2: rusia2
+        }
+    ]
+
     return (
         <section id="inTheWorld">
             <Container>
@@ -28,42 +58,20 @@ const InTheWorld = () => {
                     <Col lg={12}>
                         <div className="tab-menu">
                             <Tabs activeKey={showImages} onSelect={handleSelect} className="text-center d-flex justify-content-center">
-                                <Tab className="tab-link" eventKey="link-0" title="En el mundo">
-                                    <Row>
-                                        <Col>
-                                            <div>
-                                                <img alt="crionica en el mundo" />
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Tab>
-                                <Tab eventKey="link-1" title="Arizona">
-                                    <Row>
-                                        <Col>
-                                            <div>
-                                                <img alt="crionica en arizona" src={arizona1} />
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Tab>
-                                <Tab eventKey="link-2" title="China">
-                                    <Row>
-                                        <Col>
-                                            <div>
-                                                <img alt="crionica en china" src={china1} />
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Tab>
-                                <Tab eventKey="link-3" title="Rusia">
-                                    <Row>
-                                        <Col>
-                                            <div>
-                                                <img alt="crionica rusia" src={rusia1} />
-                                            </div>
-                                        </Col>
-                                    </Row>
-                                </Tab>
+                                {imagesTabs.map((imageTab, it) => (
+                                    <Tab className="tab-link" eventKey={imageTab.eventKey} title={imageTab.title}>
+                                        <Row>
+                                            <Col lg={4} sm={6}>
+                                                <div>
+                                                    <img alt={`imagen ${imageTab.title}`} src={imageTab.image1} className="imgTab" />
+                                                </div>
+                                                <div>
+                                                    <img alt={`imagen ${imageTab.title}`} src={imageTab.image2} />
+                                                </div>
+                                            </Col>
+                                        </Row>
+                                    </Tab>
+                                ))}
                             </Tabs>
                         </div>
                     </Col>
