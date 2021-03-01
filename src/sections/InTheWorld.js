@@ -62,12 +62,10 @@ const InTheWorld = () => {
                                     <Tab className="tab-link" eventKey={imageTab.eventKey} title={imageTab.title}>
                                         <Row>
                                             <Col lg={4} sm={6}>
-                                                <div>
-                                                    <img alt={`imagen ${imageTab.title}`} src={imageTab.image1} className="imgTab" />
-                                                </div>
-                                                <div>
-                                                    <img alt={`imagen ${imageTab.title}`} src={imageTab.image2} />
-                                                </div>
+                                                <img alt={`imagen ${imageTab.title}`} src={imageTab.image1} className="img-fluid" />
+                                            </Col>
+                                            <Col lg={4} sm={6}>
+                                                <img alt={`imagen ${imageTab.title}`} src={imageTab.image2} className="img-fluid" />
                                             </Col>
                                         </Row>
                                     </Tab>

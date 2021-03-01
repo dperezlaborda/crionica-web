@@ -1,3 +1,9 @@
+#inTheWorld{
+    background-color: #EDEDED;
+    padding: 60px 0;
+}
+
+
 #inTheWorld  .nav-tabs .nav-link.active{
     color: #6c757d;
     border-bottom: 1px solid #A5CAD9;
